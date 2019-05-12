@@ -1,0 +1,20 @@
+IDE
+Python: PyCharm
+Other: Visual Sudio Code
+
+Browser
+Safari, Chrome, Firefox, IE
+
+Hosting
+Cloudflare
+
+Project
+Codepen
+Github
+
+Music
+Code Radio - https://www.youtube.com/watch?v=8XJ6r4U171I
+
+My Books
+Play Books
+Kindle

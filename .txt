@@ -1,9 +1,36 @@
+Collections
+https://github.com/sdmg15/Best-websites-a-programmer-should-visit
+
 IDE
 Python: PyCharm
 Other: Visual Sudio Code
 
 Browser
 Safari, Chrome, Firefox, IE
+
+General
+Stack Overflow
+Google
+
+Learn
+Freecodecamp
+edX
+Coursera
+Khan Academy
+The Odin Project
+Udemy
+Udacity
+Css-Tricks
+Mozilla Dev
+gitimmersion
+javascript.info
+
+Flex
+Codewars
+
+Social
+news.ycombinator.com
+r/programming
 
 Hosting
 Cloudflare

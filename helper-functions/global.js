@@ -7,6 +7,11 @@ function selectAll(sel) {
   return typeof sel === 'string' ? document.querySelectorAll(sel) : sel;
 }
 
+// native safety check
+function isNative(fn) {
+	console.log((/\{\s*\[native code\]\s*\}/).test('' + fn));
+}
+
 // load to the DOM with a performance metric
 async function callWithPerf(fn) {
   const start = new Date().getTime();

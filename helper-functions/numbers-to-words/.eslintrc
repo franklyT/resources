@@ -1,0 +1,25 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "webextensions": true
+    },
+    "extends": "airbnb",
+    
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly",
+      "angular": true,
+      "printToNum": "writable"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-use-before-define": "off",
+      "no-console": "off",
+      "prefer-destructuring": "off"
+    }
+  }
+  

@@ -9,7 +9,7 @@ function selectAll(sel) {
 
 // native safety check
 function isNative(fn) {
-	console.log((/\{\s*\[native code\]\s*\}/).test('' + fn));
+  console.log(/\{\s*\[native code\]\s*\}/.test(`${fn}`));
 }
 
 // load to the DOM with a performance metric
@@ -106,6 +106,22 @@ function isInViewport(elm) {
 
 function dateConverter(date) {
   // get day algorithm based on https://www.mindstick.com/blog/387/calculating-day-of-the-week-for-any-date-in-javascript
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   const year = date.slice(0, 4);
   const day = date.slice(8, 10);

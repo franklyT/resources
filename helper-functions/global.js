@@ -40,7 +40,7 @@ function randRange(min, max) {
 function cClear(timeoutinms) {
   setTimeout(() => {
     console.clear();
-    console.log('Tabby Tab: Warning: Console was cleaned by extension.');
+    console.log('Console was cleared.');
   }, timeoutinms);
 }
 

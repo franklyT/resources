@@ -1,5 +1,5 @@
     // Smartphone
-    @mixin root__smartphone {
+     @mixin root__smartphone {
         @media (max-width: 480px) {
             @content;
         }

@@ -37,15 +37,6 @@ function randRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// React component version of random number function, framed within "Helper" class
-class Helper {
-    static randomIntBetween(low, high) {
-        return Math.floor(Math.random() * (high - low + 1) + low);
-      }
-    }
-export default Helper;
-
-
 // console clear utility function, should largely not be used
 function cClear(timeoutinms) {
   setTimeout(() => {
@@ -114,23 +105,3 @@ function isInViewport(elm) {
     && bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-
-// React date parser
-class ParseDate {
-  static GetToday() {
-    const months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept','Oct', 'Nov', 'Dec'],
-          days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'],
-          
-          today = new Date(),
-          dd = today.getDate(),
-          mm = today.getMonth(),
-          yyyy = today.getFullYear();
-
-    return `${ days[today.getDay()] }, ${ months[mm < 10 ? (0 + mm): mm] } ${
-      dd < 10 ? (0 + dd) : dd
-    }, ${yyyy}`;
-  }
-}
-
-export default ParseDate;
-

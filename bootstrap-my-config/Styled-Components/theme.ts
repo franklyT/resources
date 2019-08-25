@@ -5,24 +5,24 @@ import { css, keyframes } from 'styled-components';
 export const theme: any = {
     variables: {
         colors: {
-            navy: 'rgb(0,31,63)',
-            blue: 'rgb(0,116,217)',
-            aqua: 'rgb(127,219,255)',
-            teal: 'rgb(57,204,204)',
-            olive: 'rgb(61,153,112)',
-            green: 'rgb(46,204,64)',
-            lime: 'rgb(1,255,112)',
-            yellow: 'rgb(255,220,0)',
-            orange: 'rgb(255,133,27)',
-            red: 'rgb(255,65,54)',
-            maroon: 'rgb(133,20,75)',
-            fuchsia: 'rgb(240,18,190)',
-            purple: 'rgb(177,13,201)',
-            black: 'rgb(17,17,17)',
-            gray: 'rgb(170,170,170)',
-            grey: 'rgb(170,170,170)',
-            silver: 'rgb(221,221,221)',
-            white: 'rgb(248,248,248)'
+            navy: '0, 031, 63',
+            blue: '0, 116, 217',
+            aqua: '127, 219, 255',
+            teal: '57, 204, 204',
+            olive: '61, 153, 112',
+            green: '46, 204, 64',
+            lime: '1, 255, 112',
+            yellow: '255, 220, 0',
+            orange: '255, 133, 27',
+            red: '255, 65, 54',
+            maroon: '133, 20, 75',
+            fuchsia: '240, 18, 190',
+            purple: '177, 13, 201',
+            black: '17, 17, 17',
+            gray: '170, 170, 170',
+            grey: '170, 170, 170',
+            silver: '221, 221, 221',
+            white: '248, 248, 248'
         }
     },
     polyfills: {
@@ -134,8 +134,8 @@ export const theme: any = {
         }
     },
     mixins: {
-        PCA: (cssProperty: string, color: any, alpha: string) => {
-            return `${cssProperty}: rgba(${color}, ${alpha})`;
+        box: (width: string, height: string = width) => {
+            return `width:${width};height:${height}`;
         }
     }
 }

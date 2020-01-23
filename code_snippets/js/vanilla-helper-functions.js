@@ -37,7 +37,7 @@ function randRange(min, max) {
 }
 
 // console clear utility function, should largely not be used
-function cClear(timeoutinms) {
+function clearConsole(timeoutinms) {
   setTimeout(() => {
     console.clear();
     console.log('Console was cleared.');

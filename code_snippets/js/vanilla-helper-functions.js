@@ -13,7 +13,7 @@ function isNative(fn) {
 }
 
 // load to the DOM with a performance metric
-async function callWithPerf(fn) {
+async function getPerformance(fn) {
   const start = new Date().getTime();
   await fn();
   console.log(`${fn.name} took ${new Date().getTime() - start} ms to execute.`);

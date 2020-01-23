@@ -24,7 +24,6 @@ function onDOMLoad(method) {
   return window.addEventListener(
     'DOMContentLoaded',
     () => {
-      // eslint-disable-next-line no-unused-expressions
       method;
     },
     false,

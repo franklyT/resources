@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { dictionaryLatin } from './Dictionary/Latin.js'
+import { dictionaryLatin } from '../Dictionary/Latin.js'
 
   export function helperRandomIntBetween(low, high) {
     return Math.floor(Math.random() * (high - low + 1) + low);

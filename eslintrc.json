@@ -9,7 +9,7 @@
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly",
-    "angular": true,
+    "angular": true
 
   },
   "parserOptions": {

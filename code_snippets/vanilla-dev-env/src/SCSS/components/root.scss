@@ -1,0 +1,12 @@
+@import './src/SCSS/_lib/breakpoints.scss';
+@import './src/SCSS/_lib/mixins.scss';
+@import './src/SCSS/_lib/polyfills.scss';
+@import './src/SCSS/_lib/animations.scss';
+@import './src/SCSS/_lib/variables.scss';
+@import './src/SCSS/_lib/normalize.scss';
+
+// @import './src/';
+
+body {
+    font-size: 2em;
+}

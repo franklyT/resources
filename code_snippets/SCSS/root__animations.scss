@@ -1,9 +1,9 @@
-  @include root__keyframes(root__fadein) {
+  @keyframes fadein {
     0%   { 
-      @include root__opacity(0); 
+      opacity: 0; 
     }
     100% { 
-      @include root__opacity(1); 
+      opacity: 1; 
     }
   }
   

@@ -1,89 +1,81 @@
 // Variables
-    $navy: rgb(0, 31, 63);
-    $blue: rgb(0, 116, 217);
-    $aqua: rgb(127, 219, 255);
-    $teal: rgb(57, 204, 204);
-    $olive: rgb(61, 153, 112);
-    $green: rgb(46, 204, 64);
-    $lime: rgb(1, 255, 112);
-    $yellow: rgb(255, 220, 0);
-    $orange: rgb(255, 133, 27);
-    $red: rgb(255, 65, 54);
-    $maroon: rgb(133, 20, 75);
-    $fuchsia: rgb(240, 18, 190);
-    $purple: rgb(177, 13, 201);
-    $black: rgb(17, 17, 17);
-    $gray: rgb(170, 170, 170);
-    $grey: rgb(170, 170, 170);
-    $silver: rgb(221, 221, 221);
-    $white: rgb(248, 248, 248);
-// Variables End
+// ==========================================================================
+$navy: rgb(0, 31, 63);
+$blue: rgb(0, 116, 217);
+$aqua: rgb(127, 219, 255);
+$teal: rgb(57, 204, 204);
+$olive: rgb(61, 153, 112);
+$green: rgb(46, 204, 64);
+$lime: rgb(1, 255, 112);
+$yellow: rgb(255, 220, 0);
+$orange: rgb(255, 133, 27);
+$red: rgb(255, 65, 54);
+$maroon: rgb(133, 20, 75);
+$fuchsia: rgb(240, 18, 190);
+$purple: rgb(177, 13, 201);
+$black: rgb(17, 17, 17);
+$gray: rgb(170, 170, 170);
+$grey: rgb(170, 170, 170);
+$silver: rgb(221, 221, 221);
+$white: rgb(248, 248, 248);
 
 // Animations
-    @keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    }
-// Animations end
+// ==========================================================================
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 // Breakpoints
-    // Smartphone
-    @mixin smartphone {
-    @media (max-width: 480px) {
-        @content;
-    }
-    }
+// ==========================================================================
+@mixin smartphone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
 
-    // Smartphone Landscape
-    @mixin smartphone_landscape {
-    @media (max-width: 768px) {
-        @content;
-    }
-    }
+@mixin smartphone_landscape {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
 
-    // Tablets
-    @mixin tablet {
-    @media (max-width: 991px) {
-        @content;
-    }
-    }
+@mixin tablet {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
 
-    // Desktops
-    @mixin desktop {
-    @media (min-width: 1300px) {
-        @content;
-    }
-    }
+@mixin desktop {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
 
-    // Large Desktops
-    @mixin desktop_large {
-    @media (min-width: 1600px) {
-        @content;
-    }
-    }
-// Breakpoints End
+@mixin desktop_large {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
 
 // Mixins
-    @mixin box($width, $height: $width) {
-    width: $width;
-    height: $height;
-    }
-
-    // @mixin property_color_alpha($property, $color, $alpha: 1) {
-    //  #{$property}: rgba($color, $alpha);
-    // }
-// Mixins End
+// ==========================================================================
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
 
 // Normalize
-    // normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
-    // minor adaptation for scss
+// ==========================================================================
+// normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+// minor adaptation for scss
 
     // Document
-    // ========================================================================== 
+    // ==========================================================================
 
     // * 1. Correct the line height in all browsers
     // * 2. Prevent adjustments of font size after orientation changes in iOS
@@ -94,7 +86,7 @@
     }
 
     // Sections
-    // ========================================================================== 
+    // ==========================================================================
 
     // * Remove the margin in all browsers
 
@@ -361,4 +353,3 @@
     [hidden] {
     display: none;
     }
-// Normalize End

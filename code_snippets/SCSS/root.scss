@@ -1,10 +1,7 @@
 @import './src/SCSS/root/root_library.scss';
 
 body {
-  // Styles
-  @include root__font-smoothing();
-
-  background-color: $root__White;
+  background-color: $white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

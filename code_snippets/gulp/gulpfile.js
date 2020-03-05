@@ -1,25 +1,25 @@
 // Sass configuration
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var clean = require('gulp-clean-css');
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var concat = require("gulp-concat");
+var clean = require("gulp-clean-css");
+var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('sass', function(cb) {
+gulp.task("sass", function(cb) {
   gulp
-    .src('./src/scss/*.scss')
+    .src("./src/SCSS/root/root.scss")
     .pipe(sass())
-    .pipe(concat('root.css'))
+    .pipe(concat("root.min.css"))
     .pipe(clean())
-    .pipe(
-      gulp.dest('./dist/Styles/')
-    );
+    .pipe(autoprefixer())
+    .pipe(gulp.dest("./dist/CSS/"));
   cb();
 });
 
 gulp.task(
-  'default',
-  gulp.series('sass', function(cb) {
-    gulp.watch('./src/scss/*.scss', gulp.series('sass'));
+  "default",
+  gulp.series("sass", function(cb) {
+    gulp.watch("./src/**/*.scss", gulp.series("sass"));
     cb();
   })
 );
